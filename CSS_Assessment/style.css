@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+}
+
+/* navbar */
+.box1 {
+  background-color: grey;
+  margin-bottom: 32px;
+}
+
+/* blue box */
+.box2 {
+  background-color: blue;
+  height: 50vh;
+  width: 50vw;
+  float: left;
+  position: relative;
+}
+
+/*red box  */
+.box3 {
+  background-color: red;
+  height: 50vh;
+  width: 25vw;
+  float: right;
+  position: relative;
+}
+
+/* text center in the box */
+.box2 > span,
+.box3 > span {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+/* footer */
+.box4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkgreen;
+}
