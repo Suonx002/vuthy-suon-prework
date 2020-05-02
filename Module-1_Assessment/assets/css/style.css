@@ -75,6 +75,31 @@ h6 {
   border: none;
 }
 
+/* portfolio */
+
+.portfolio-container {
+  height: 200px;
+  width: 300px;
+}
+
+.portfolio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.portfolio-title {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 0;
+  position: absolute;
+  bottom: 2px;
+  width: 90%;
+  font-size: 20px;
+}
+
 /* footer */
 .footer {
   font-size: 11px;
@@ -95,5 +120,23 @@ h6 {
   }
   .navbar-toggler {
     margin-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .portfolio-title {
+    width: 93.5%;
+  }
+  .portfolio-5 {
+    width: 100%;
+  }
+  .portfolio-6 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .portfolio-title {
+    width: 92%;
   }
 }
