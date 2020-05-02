@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f8f8f8;
+}
+
+.box-content {
+  height: 90vh;
+}
+
+.description {
+  color: #141414;
+  font-size: 12px;
+}
+
+.quote-btn {
+  font-size: 11.5px;
+  text-transform: uppercase;
+}
