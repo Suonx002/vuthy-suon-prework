@@ -2,6 +2,7 @@ body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
   line-height: 1.8;
+  height: 100vh;
 }
 
 a {
@@ -47,7 +48,7 @@ h6 {
 /* main */
 .main {
   background: url('../images/hero.png');
-  height: 88vh;
+  height: 86%;
 }
 
 .profile {
@@ -55,7 +56,7 @@ h6 {
   margin: auto;
 }
 
-.about-me {
+.primary-heading {
   padding-bottom: 16px;
   border-bottom: 2px solid #cccccc;
 }
@@ -63,9 +64,15 @@ h6 {
 /* profile image */
 .profile-image {
   width: 100%;
-  /* height: 150px;
-  object-fit: cover;
-  object-position: top; */
+}
+
+/* submit btn */
+.submit-btn {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 6px 22px;
+  border-radius: none;
+  border: none;
 }
 
 /* footer */
@@ -73,4 +80,20 @@ h6 {
   font-size: 11px;
   background-color: #666666;
   border-top: 6px solid #4aaaa5;
+}
+
+/* row */
+@media only screen and (min-width: 575px) {
+  .main-container {
+    margin: 0 6px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  #navbarNav {
+    margin-right: 20px;
+  }
+  .navbar-toggler {
+    margin-right: 24px;
+  }
 }
