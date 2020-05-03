@@ -70,3 +70,11 @@ body {
 .content__current-word {
   margin-bottom: 1rem;
 }
+
+#current-word {
+  margin-bottom: 1rem;
+}
+
+#guessed-letter {
+  margin-top: 1rem;
+}
