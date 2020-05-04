@@ -1,5 +1,7 @@
 ## Live Demo
 
+[Live Demo](https://suonx002.github.io/vuthy-suon-prework/Module-2_Assessment/)
+
 ## Who's That Pokemon Word Guessing Game
 
 Word guessing game is where you guess a letter and try to match the word. I am using pokemon as a theme.

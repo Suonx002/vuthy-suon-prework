@@ -156,6 +156,7 @@ const checkCharacter = (char) => {
       // LOSE
 
       // need to put in array or else .join is gonna throw an error
+      doneSound.play();
       guessingWord = [wordToMatch.name.toUpperCase()];
       imageContent.classList.add('content__image--active');
       pauseGame = true;
