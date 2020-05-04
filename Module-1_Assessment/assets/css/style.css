@@ -48,7 +48,7 @@ h6 {
 /* main */
 .main {
   background: url('../images/hero.png');
-  height: 86%;
+  height: 90%;
 }
 
 .profile {
@@ -124,6 +124,9 @@ h6 {
 }
 
 @media only screen and (max-width: 575px) {
+  .main-container {
+    margin-bottom: 24px;
+  }
   .portfolio-title {
     width: 93.5%;
   }
