@@ -117,7 +117,6 @@ const checkCharacter = (char) => {
   incorrectSound.setAttribute('src', './assets/audios/wrong.mp3');
 
   for (let i = 0; i < wordToMatch.name.length; i++) {
-    console.log(char === wordToMatch.name.toUpperCase());
     if (char === wordToMatch.name[i].toUpperCase()) {
       // if char exist, replace _ with char
       guessingWord[i] = char;
@@ -155,9 +154,13 @@ const checkCharacter = (char) => {
     // if no more guesses, user lose
     if (numOfGuess === 0) {
       // LOSE
-      guessingWord = wordToMatch.name.toUpperCase();
+
+      // need to put in array or else .join is gonna throw an error
+      guessingWord = [wordToMatch.name.toUpperCase()];
+
       imageContent.classList.add('content__image--active');
       pauseGame = true;
+      showDisplay();
       // restart game
       setTimeout(() => {
         restartGame();
