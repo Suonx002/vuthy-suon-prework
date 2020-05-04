@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-body {
+main {
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(135deg, #3498db, #2980b9);
   color: #fff;
   text-align: center;
   font-size: 1.2rem;
-}
-
-.container {
-  max-width: 750;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero.jpg') no-repeat center center/cover;
 }
 
 /* content */
@@ -54,7 +51,7 @@ body {
 /* image */
 .content__image {
   opacity: 0.5;
-  filter: blur(7px);
+  filter: blur(11px);
 }
 
 .content__image--active {
@@ -77,4 +74,37 @@ body {
 
 #guessed-letter {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 80%;
+    margin: auto;
+  }
+  .content__info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content__image--container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .content__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .content__wins,
+  .content_guesses {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content {
+    width: 70%;
+  }
 }
