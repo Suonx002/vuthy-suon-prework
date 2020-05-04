@@ -21,6 +21,7 @@ main {
   padding: 2rem;
   background-color: #f1c40f;
   border-radius: 4px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .content__title {
